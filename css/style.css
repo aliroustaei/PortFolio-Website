@@ -1,0 +1,449 @@
+@font-face{
+    font-family:'irans';
+    src: url('../fonts/IRANSans.ttf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html{
+    overflow-y: scroll
+}
+a{
+    text-decoration: none
+}
+ul{
+    list-style: none
+}
+h1,h2,h3,h4,h5,p,.btn,a{
+    font-family: 'irans';
+    color: #141313;
+}
+
+/************* media query font  ***************/
+
+@media only screen and (max-width: 568px) {
+      
+    h1{
+        font-size: 1.5rem !important;
+    }
+    h2,span{
+        font-size: 1.1rem !important;
+    }
+    h5{
+        font-size: 1rem !important;
+    }
+    p,button{
+        font-size: 0.8rem !important;
+    }
+    .footer-social a{
+        margin: 2rem 0.5rem !important
+    }
+
+}
+/********** navigation *************/
+.navbar{
+    background-color: #fff;
+    box-shadow: 0px 10px 30px rgba(132, 79, 238,0.2);
+}
+.nav-item{
+    margin-left: 35px;
+    margin-top: 10px
+}
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent; 
+}
+.navbar .fas{
+    color: #854fee;
+}
+.navbar .fas:hover{
+    transform: scale(1.1)
+}
+.nav-link{
+    color: #141313 !important;
+}
+.nav-link:hover{
+   color: #854fee !important;
+}
+.active{
+    color: #854fee !important;
+}
+/************** banner ****************/
+
+.banner{
+    padding: 10rem 0;
+    background: url('../img/banner/home-banner.png') no-repeat 0% 100%;
+    background-size:cover;
+}
+.hi::after{
+    content: "";
+    height: 2px;
+    width: 120px;
+    background: #854fee;
+    display: inline-block;
+    margin-right: 5%;
+}
+.banner-t h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0
+}
+.animate__animated {
+  --animate-duration: 1.5s;
+}
+.primary-button{
+    border: solid 2px #854fee;
+    padding: 10px 20px;
+    transition: 0.3s linear;
+    margin-left: 5%;
+}
+.primary-button:hover{
+    background-image: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background-clip: border-box;
+    border: solid 2px transparent;
+    color: #fff;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.4);
+}
+.secondary-button{
+    background-image: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    background-clip: border-box;
+    border: solid 2px transparent;
+    color: #fff;
+    padding: 10px 20px;
+    transition: 0.3s linear;
+}
+.secondary-button:hover{
+    border: solid 2px #854fee;
+    background: transparent;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.4);
+}
+.banner-t div{
+    margin: 5% 0
+}
+
+/************** about *************/
+
+.about-i img{
+    width: 100%
+}
+.about-t h2 span{
+    font-size: 2.2rem;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0
+}
+.about-t hr{
+    width: 150px;
+    color: #854fee;
+    opacity: 1;
+    border: solid 2px #854fee;
+    border-radius:50px
+}
+.about-t p{
+    color: #777777;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/*************** brand *****************/
+
+.brand-i,.col-6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.brand-i .col-6{
+    margin: 0px
+}
+.single-brand{
+    margin: 10px;
+    padding: 1.8rem  0rem;
+    border: 1px solid #201f1f17;
+    text-align: center;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+.single-brand img{
+    width: 50%;
+}
+.single-brand:hover{
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.3);
+    transform: scale(1.1)
+}
+.single-brand:hover img{
+    filter: brightness(0.15);
+}
+.brand-t{
+    background-color: #FEF7F7;
+    padding: 20px;
+    align-items: center;  
+}
+.experience{
+    display: flex;
+    align-items: center;
+    
+}
+.experience span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0
+}
+.year{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #854fee
+}
+.contact-ex{
+    display: flex;
+    margin-top: 80px;
+}
+.contact-e,.contact-n{
+    display: flex;
+}
+.contact-ex i{
+    color: #854fee
+}
+.num1{
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 568px) {
+      
+    .year{
+        font-size: 3rem !important;
+    }
+    .fa-mobile, .fa-envelope{
+        font-size: 2rem !important;
+    }
+}
+/*************** services *************/
+
+.services h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.services hr,.client hr{
+    width: 150px;
+    color: #854fee;
+    opacity: 1;
+    border: solid 2px #854fee;
+    border-radius:50px;
+    margin: auto;
+    margin-bottom: 20px
+}
+.services .p1{
+    margin:auto;
+    color: #777777
+}
+.services .row{
+   padding-top: 4rem
+}
+.services-item img{
+    height: 70px
+}
+.services-item{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    transition: 0.5s;
+}
+.services-item:hover{
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.3);
+}
+.services-item h5{
+    margin: 20px 0 10px
+}
+.services-item .card-text{
+    color: #777777;
+    font-size: 0.9rem;
+}
+
+/************** Project ***********/
+
+.Project span{
+    font-size: 2.2rem;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0
+}
+.project hr{
+    width: 150px;
+    color: #854fee;
+    opacity: 1;
+    border: solid 2px #854fee;
+    border-radius:50px;
+    margin-bottom: 20px
+}
+.Project img{
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.5s
+}
+
+.Project-item:hover img{
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.3);
+    filter: brightness(1.1);
+}
+.Project h5{
+    margin: 15px 0 10px;
+    font-weight: bold
+}
+.Project p{
+    color: #777777;
+    font-size: 0.9rem;
+    width: 15rem
+}
+
+/************ client *****************/
+
+.client h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.client .p1{
+    color: #777777;
+    margin: auto;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.client-item{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    padding:2rem;
+    margin: 5rem auto;
+    max-width: 550px;
+    position: relative;
+    overflow: visible
+}
+.client-iext{
+    padding: 1rem
+}
+.client-item img{
+    width: 6rem;
+    margin: 1rem;
+    border: 5px solid #FFD54F;
+    border-radius: 15px 2px 15px 2px;
+    position: absolute;
+    top: -3rem;
+}
+.client-item h5{
+    margin: 30px 0 20px;
+    font-weight: bold;
+    color: #fff
+}
+.client-item p{
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 1rem;
+}
+.client-item i{
+    color: aliceblue;  
+}
+.fas.fa-quote-left{
+    margin-right: 98%;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: 854fee;
+    border-radius: 50%;
+    border: none;
+    height: 10px;
+    width: 10px;
+    margin: 0 0.5rem
+}
+
+/*************** Subscribe *****************/
+
+.Subscribe h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.Subscribe p{
+    color: #777777;
+    text-align: center;
+}
+.Subscribe form{
+    background: url('../img/subscribe-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 3rem auto 0;
+}
+.Subscribe input{
+    padding: 1rem 1rem;
+    border: 2px solid whitesmoke;
+    background: transparent;
+    color: #fff;
+    font-family: 'irans';
+}
+.Subscribe input::placeholder{
+    color: #fff
+}
+.form-text{
+    font-family: 'irans';
+    color: #fff;
+}
+.button-3{
+    border: solid 2px #fff;
+    transition: 0.5s;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.3);
+}
+.button-3:hover{
+    box-shadow: none;
+}
+
+/************** footer ******************/
+
+.footer{
+    background-image: url(../img/footer-bg.png)
+}
+.footer-logo{
+    margin-bottom: 2rem
+}
+.footer-social h4{
+    font-weight: bold;
+}
+.footer-social a{
+    display: inline-block;
+    margin: 3rem 2rem 4rem;
+}
+.footer-social i{
+    color: #777777;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+.footer-social i:hover{
+    color: #854fee;
+    transform: scale(1.2)
+}
+
+/******* alert *********/
+
+
+.alert-success{
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    font-family: "irans";
+    visibility: visible;
+    opacity: 1;
+    transition: ease-out 0.3s;
+}
+
+.alert-hide{
+    visibility: hidden;
+    opacity: 0;
+}
+
